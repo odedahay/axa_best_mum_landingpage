@@ -71,78 +71,6 @@ p {color: #58595b;}
     src: url("fonts/icomoon.eot") format("embedded-opentype"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.svg") format("svg");
 }
 
-/****** Header ******/
-
-.axa_logo {
-    padding-top: 0;
-    padding-bottom: 24px
-}
-
-.axa_logo img {
-    height: 46px;
-    -webkit-transition: all .3s;
-    transition: all .3s
-}
-
-
-
-.header_right_links ul{
-    padding-top: 25px;
-}
-
-.header_right_links li a {
-    padding-top: 20px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    color: #f07662;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    text-decoration: none !important;
-    cursor: pointer;
-    -webkit-transition: all .3s;
-    transition: all .3s
-}
-
-.header_right_links a:hover {
-    color: #ec4d33
-}
-
-.header_right_links span{
-    padding-top: 8px;
-}
-
-.nav>li>a:focus, .nav>li>a:hover{
-    background-color: transparent;
-}
-
-.navbar-default{
-    background-color: #fff;
-    border-color: #fff; 
-    padding-bottom: 12px;
-}
-
-/***** Scrolling Effect ******/
-
-.effect{
-    background-color: rgba(255, 255, 255, .4);
-    border-color: #fff; 
-    padding-bottom: 0px !important;
-    }
-
-.effect img{
-    height: 36px!important;
-    -webkit-transition: .3s all;
-    transition: .3s all;
-}
-
-.header_effect li a{
-    font-size: 11px !important;
-     -webkit-transition: .3s all;
-    transition: .3s all;
-}
-
 /* ==== ICONS ==== */
 
 .req_icon:before {
@@ -191,8 +119,8 @@ p {color: #58595b;}
     margin-bottom: 50px;
 }
 
-#hero article { 
-  
+#hero article {
+
   width: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -231,8 +159,8 @@ p {color: #58595b;}
     margin-bottom: 50px;
 }
 
-#hero_inner article { 
-  
+#hero_inner article {
+
   width: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -253,6 +181,7 @@ p {color: #58595b;}
 }
 
 .leadp{
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     padding-bottom: 15px;
 }
@@ -260,6 +189,19 @@ p {color: #58595b;}
 #hero_inner article a{
     text-decoration: none;
     color: #fff;
+}
+.carousel-inner{
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.carousel-indicators{
+  padding-top: 20px;
+}
+.carousel-indicators li{
+  border: 1px solid #1e3465;
+}
+.carousel-indicators .active{
+    background-color: #06539b ;
 }
 
 
@@ -388,7 +330,7 @@ a.find_out_more_btn:hover {
 }
 
 .primary-btn {
-   
+
     line-height: 45px;
     z-index: 0;
     -webkit-transition: color .3s;
@@ -400,12 +342,12 @@ a.find_out_more_btn:hover {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-  
+
     text-transform: capitalize;
     -webkit-font-smoothing: antialiased;
     -webkit-transition: color .3s;
     transition: color .3s
- 
+
 }
 
 .primary-btn:before {
@@ -585,7 +527,8 @@ a.find_out_more_btn:hover {
     color: #015399;
     font-weight: 600;
     line-height: 1.3;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
  #empower-features{
@@ -641,16 +584,12 @@ a.find_out_more_btn:hover {
 .custom_break{
     margin: 40px 0;
 }
-.custom_hr img{
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    margin-right: 30px;
-    margin-top: -60px;
-
+.customHr {
+  position: relative;
 }
+
 .custom_break hr{
-    position: relative;
+
     top:40;
     height: 4px;
     color: #cae9e4;
@@ -658,6 +597,14 @@ a.find_out_more_btn:hover {
     font-size: 0;
     border: 0;
     margin-top:20px;
+}
+.custom_hr{
+    /*position: absolute;*/
+    /*right:10;*/
+    float: right;
+    z-index: 2;
+    margin-right: -10px;
+    margin-top: -60px;
 }
 /* ==== VIDEO FEATURES ==== */
 #celebrates-features{
@@ -690,16 +637,20 @@ a.find_out_more_btn:hover {
 #forms-features{
     background-color: #eee;
 }
-
+.note_asterisk{
+  font-size: .75em;
+  padding-top: 20px;
+  color: #999;
+}
 /* ==== Forms FEATURES ==== */
 
 .error-mes, .error-phone {
     font-size: 12px;
-    color: red; 
+    color: red;
 }
 .error-check{
     font-size: 12px;
-    color: red;  
+    color: red;
 }
 
 
@@ -714,7 +665,7 @@ a.find_out_more_btn:hover {
 .body_ct {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    color: #4a4a4a
+    color: #4a4a4a;
 }
 .form-input label {
     display: block
@@ -921,7 +872,7 @@ p.form-input{
     font-family: 'Source Sans Pro', sans-serif;
     color: #00008f;
     padding: 0 30px;
-    font-size: 14px;
+    font-size: .85em;
     font-weight: 600;
     text-decoration: none;
     text-transform: capitalize;
@@ -1052,7 +1003,9 @@ button.double-highlights_submit:hover {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .iti-flag {background-image: url("images/flags@2x.png");}
 }
-
+input[type=tel]{
+  color: #4a4a4a;
+}
 /***** Forms Validation *******/
 .bv-form .help-block {
     margin-bottom: 0;
@@ -1084,33 +1037,363 @@ button.double-highlights_submit:hover {
     margin: 0;
 }
 
-.table>tbody>tr>td .move-left{ 
+.table>tbody>tr>td .move-left{
     padding-left: 80px;
 
 }
 
 
-.table>thead>tr>th{ 
+.table>thead>tr>th{
     background-color: #cae9e4;
     border-bottom: 2px solid #cae9e4;}
-.table>tbody>tr>td{ 
-    border-top: 1px solid #cae9e4; 
+.table>tbody>tr>td{
+    border-top: 1px solid #cae9e4;
 }
-.remove-topborder{ 
+.remove-topborder{
     border-top: none !important;
 
 }
-
+.errors{
+  color: red;
+  font-size: 11px;
+  padding-top: 5px;
+}
+.margin-btm{
+  margin-bottom: 20px;
+}
 /**/
+/* ==== Headers ==== */
+/***** Scrolling Effect ******/
+
+.effect{
+    background-color: rgba(255, 255, 255, .4);
+    border-color: #fff;
+    padding-bottom: 0px !important;
+    }
+
+.effect img{
+    height: 36px!important;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.header_effect li a{
+    font-size: 11px !important;
+     -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+
+
+.axa_logo_m,
+.header_callus_mobile,
+.header_right_mobile {
+    display: none
+}
+
+.header-sec-one {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    -webkit-transition: height .3s;
+    transition: height .3s
+}
+
+
+.smaller {
+    border-bottom: 1px solid #ccc
+}
+
+.smaller .axa_logo img {
+    height: 32px!important
+}
+
+.smaller .header_right_links {
+    padding-top: 26px!important;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.smaller .header_right_links a {
+    font-size: 11px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.smaller .header_right_links .req_icon:before {
+    font-size: 20px
+}
+
+.smaller .header_right_links .call_icon:before {
+    font-size: 18px
+}
+
+.smaller .axa_logo_m {
+    padding-top: 0;
+    padding-bottom: 24px
+}
+
+.smaller .axa_logo_m img {
+    height: 35px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.smaller .header_callus_mobile {
+    margin-top: 0
+}
+
+.smaller .header_callus_mobile .req_icon:before {
+    font-size: 20px
+}
+
+.smaller .header_callus_mobile .call_icon:before {
+    font-size: 18px
+}
+
+.smaller .header_callus_mobile a {
+    font-size: 10px
+}
+
+.header_right_links {
+    padding-top: 25px;
+    padding-bottom: 12px
+}
+
+.header_right_links a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: #f07662;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none !important;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+.header_right_links a span{
+  padding-top: 8px;
+}
+
+.header_right_links a:hover {
+    color: #ec4d33
+}
+
+.req_icon:before {
+    padding-right: 7px;
+    font-family: icomoon;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-transform: none;
+    content: "\e904";
+    speak: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.call_icon:before {
+    padding-right: 5px;
+    font-family: icomoon;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-transform: none;
+    content: "\1f322";
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.axa_logo {
+    padding-top: 0;
+    padding-bottom: 24px
+}
+
+.axa_logo img {
+    height: 46px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.axa_logo_m {
+    padding-top: 0;
+    padding-bottom: 12px
+}
+
+.axa_logo_m img {
+    height: 41px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+@media only screen and (max-width:992px) {
+    .header_right_mobile {
+        display: block;
+        margin-top: 8px
+    }
+    .header_right_mobile .req_icon {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        text-decoration: none
+    }
+    .header_right_mobile a {
+        text-align: center;
+        font-size: 8px;
+        display: block;
+        color: rgba(240, 118, 98, .8);
+        font-family: FranklinGothic, arial;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 10px;
+        padding-bottom: 5px;
+        cursor: pointer
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .header_callus_mobile {
+        display: block
+    }
+    .header_callus_mobile .call_icon {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        text-decoration: none
+    }
+    .header_callus_mobile .req_icon {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        text-decoration: none
+    }
+    .header_callus_mobile a {
+        text-align: center;
+        font-size: 8px;
+        display: block;
+        color: #f07662;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 10px;
+        padding-bottom: 5px;
+        cursor: pointer
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .axa_logo,
+    .axa_logo_bms,
+    .header_right_links {
+        display: none
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .header_callus_mobile {
+        display: block
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .axa_logo_m {
+        display: block
+    }
+}
+
+.axa_logo_bms {
+    padding-top: 19px;
+    padding-bottom: 16px
+}
+
+.axa_logo_bms img {
+    height: 40px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.header_right_text {
+    padding-top: 27px;
+    padding-bottom: 29px;
+    color: #9b9b9b;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: right;
+    font-stretch: normal
+}
+
+@media only screen and (max-width:680px) {
+    .header_right_text {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .header_right_text {
+        font-size: 11px
+    }
+}
+
+.header_right_partnerlogo {
+    padding-top: 21px;
+    padding-bottom: 23px
+}
+
+@media only screen and (max-width:680px) {
+    .header_right_partnerlogo {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+}
+
+.header_right_partnerlogo img {
+    height: 30px
+}
+
+@media only screen and (max-width:680px) {
+    .header_right_partnerlogo img {
+        height: 20px
+    }
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media(max-width: 480px) {
+
+}
 @media(max-width: 767px) {
-    #hero article { 
-        text-align: center;
+
+    .collapse {
+      display: none !important;
     }
 
+
+    #hero article {
+        text-align: center;
+    }
 
     .fr-links p {
         padding-top: 8px;
@@ -1139,16 +1422,18 @@ button.double-highlights_submit:hover {
      .footer-form{
         padding-bottom: 40px;
     }
-    .sub_btn{
-       position: absolute;
-        padding-top: 85px;
-        left: 0;
-        right: 0;
-        z-index: 4;
+    .col-2-features .blue_h3{
+      text-align: left;
+      font-size: 2em;
+      padding-left: 10px;
+    }
+    #empower-features h2{
+      padding-top: 20px;
     }
 
+
     /* Inner Page */
-    
+
     #hero_inner{
         background-size:100% auto;
         min-height: auto;
@@ -1162,6 +1447,22 @@ button.double-highlights_submit:hover {
     .axa_logo img{
         height: 41px;
     }
+
+    .leadp{
+      text-align: left;
+      margin-top: 20px;
+    }
+    .sub_btn{
+       position: absolute;
+        margin-top:75px;
+        margin-left: 15px;
+        left: 0;
+        right: 0;
+        z-index: 4;
+    }
+    .button-submit{
+      line-height: 40px;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -1169,10 +1470,15 @@ button.double-highlights_submit:hover {
         padding-top: 8px;
         text-align: center;
     }
+    .button-submit{
+      line-height: 18px;
+    }
 
 }
 @media screen and (max-width : 991px) {
-
+  .button-submit{
+    line-height: 40px;
+  }
 
 }
 
@@ -1230,4 +1536,3 @@ button.double-highlights_submit:hover {
 .clearfix {
     *zoom: 1;
 }
-
